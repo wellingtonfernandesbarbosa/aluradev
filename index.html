@@ -14,16 +14,19 @@
     <h1 aria-label="AluraDev" class="header__logo">
       <img src="/public/assets/logo-plataforma.svg" alt="Logo AluraDev" class="header__logo--image">
     </h1>
+
     <div class="header__search">
       <input type="text" class="header__input" placeholder="Busque por algo">
       <img src="/public/assets/lupa.png" alt="Lupa de busca" class="header__lupa">
     </div>
+
     <div class="header__user">
       <img src="/public/assets/foto-perfil.png" alt="Perfil de usuário" class="header__user--image">
       <span class="header__user--name">Harry</span>
       <img src="/public/assets/menu-hamburguer.svg" alt="Menu" class="header__menu">
     </div>
   </header>
+
   <main class="main">
     <nav class="main__menu">
       <h2 class="main__menu--title">MENU</h2>
@@ -32,19 +35,31 @@
           <img src="/public/assets/codigo.svg" alt="">
           Editor de código
         </li>
+
         <li class="main__menu--item">
           <img src="/public/assets/comunidade.svg" alt="">
           Comunidade
         </li>
       </ul>
     </nav>
-    <section>
+    <div class="main__content">
+      <div class="main__content--code--container">
+        <div class="main__content--code">
+          <ul class="main__content--code--buttons">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
 
-    </section>
-    <div>
-
+          <textarea id="codeText" rows="13" cols="75" class="main__content--code--text"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="main__settings">
+      .
     </div>
   </main>
 </body>
+<script src="./src/index.ts" type="module"></script>
 
 </html>

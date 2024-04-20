@@ -1,6 +1,7 @@
 .main {
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
   width: 100%;
   max-width: 1440px;
 }
@@ -10,11 +11,10 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  width: 272px;
 }
 
 .main__menu--title {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 12px;
   margin: 0;
   color: var(--white);
@@ -33,8 +33,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
   color: var(--white);
   text-decoration: none;
@@ -45,8 +43,94 @@
   color: rgb(256, 256, 256, 0.6);
 }
 
+.main__content {
+  width: 752px;
+}
+
+.main__content--code--container {
+  border: 32px solid var(--ligth-blue);
+  background-color: var(--ligth-blue);
+  border-radius: 8px;
+}
+
+.main__content--code {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.main__content--code--text {
+  margin-top: 25px;
+  font-family: var(--font-roboto-mono);
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+.main__content--code--text:focus {
+  outline: none;
+}
+
+.main__content--code--buttons {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  width: fit-content;
+  margin: 0;
+}
+
+.main__content--code--buttons li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: brown;
+  list-style: none;
+  cursor: pointer;
+}
+
+.main__content--code--buttons li:nth-child(1) {
+  background-color: var(--mac-red);
+}
+
+.main__content--code--buttons li:nth-child(2) {
+  background-color: var(--mac-yellow);
+}
+
+.main__content--code--buttons li:nth-child(3) {
+  background-color: var(--mac-green);
+}
+
+.main__settings {
+  width: 272px;
+}
+
+
 @media (max-width: 768px) {
   .main {
+    width: 704px;
+    max-width: 100%;
+  }
+
+  .main__menu, .main__settings {
     display: none;
+  }
+
+  .main__content {
+    width: 704px;
+  }
+
+  .main__content--code--text {
+    width: 99%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__content--code--text {
+    height: 383px;
   }
 }

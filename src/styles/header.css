@@ -13,19 +13,23 @@ h1 {
   margin: 0;
 }
 
+.header__logo {
+  width: 272px;
+}
+
 .header__logo--image {
   width: 145px;
 }
 
 .header__search {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
+  width: 752px;
 }
 
 .header__input {
-  max-width: 752px;
-  width: 90%;
+  width: 752px;
+  width: 100%;
   padding: 16px 14px;
   border-radius: 8px;
   background-color: #2D415A;
@@ -36,7 +40,6 @@ h1 {
 .header__input {
   color: #B3BBC4;
   font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
 }
 
@@ -44,14 +47,17 @@ h1 {
   outline: none;
 }
 
-.header__lupa, .header__menu {
+.header__lupa,
+.header__menu {
   display: none;
 }
 
 .header__user {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 8px;
+  width: 272px;
 }
 
 .header__user--image {
@@ -60,7 +66,6 @@ h1 {
 
 .header__user--name {
   font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
   color: var(--white);
 
@@ -71,7 +76,8 @@ h1 {
     gap: 40px;
   }
 
-  .header__user--image, .header__user--name {
+  .header__user--image,
+  .header__user--name {
     display: none;
   }
 
@@ -84,6 +90,7 @@ h1 {
   .header {
     gap: 8px;
   }
+
   .header__search {
     display: flex;
     align-items: center;
@@ -98,5 +105,9 @@ h1 {
 
   .header__lupa {
     display: block;
+  }
+
+  .header__user {
+    width: fit-content;
   }
 }
