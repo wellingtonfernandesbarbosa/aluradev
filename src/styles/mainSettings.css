@@ -9,6 +9,12 @@
   gap: 16px;
 }
 
+.main__settings--project textarea {
+  padding: 16px;
+  font-size: 16px;
+  height: 80px;
+}
+
 .main__settings--title {
   font-size: 12px;
   line-height: 18px;
@@ -26,7 +32,8 @@
   background-color: #2D415A;
   border: none;
   padding: 0 14px;
-  color: rgba(256, 256, 256, 64%);;
+  color: rgba(256, 256, 256, 64%);
+  font-size: 16px;
 }
 
 .main__settings--input::placeholder {
