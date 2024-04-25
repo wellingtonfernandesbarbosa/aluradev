@@ -1,0 +1,52 @@
+.main__settings{
+  display: flex;
+  flex-direction: column;
+}
+
+.main__settings--project {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main__settings--title {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.main__settings--input {
+  width: 244px;
+  max-width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #2D415A;
+  border: none;
+  padding: 0 14px;
+  color: rgba(256, 256, 256, 64%);;
+}
+
+.main__settings--input::placeholder {
+  color: rgba(256, 256, 256, 64%);
+  margin: 16px 14px;
+}
+
+.main__settings--input:focus {
+  outline: none;
+  
+}
+
+/* media 768 */
+@media (max-width: 768px) {
+  .main__settings,
+    .main__settings--project, .main__settings--input {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+
+}

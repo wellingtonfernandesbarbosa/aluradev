@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
+  box-sizing: border-box;
 }
 
 .main__menu {
@@ -48,6 +49,8 @@
   gap: 32px;
   flex-direction: column;
   width: 752px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .main__content--code--container {
@@ -112,30 +115,31 @@
   width: 272px;
 }
 
-.main__content--code--button{
+.main__content--code--button {
   width: 100%;
   padding: 16px 0;
   border-radius: 8px;
   background-color: var(--blue);
-  color: rgb(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255, 0.8);
   border: none;
   cursor: pointer;
 }
-
 
 @media (max-width: 768px) {
   .main {
     width: 704px;
     max-width: 100%;
+    flex-direction: column;
   }
 
-  .main__menu, .main__settings {
+  .main__menu,
+  .main__settings {
     display: none;
   }
 
   .main__content {
     width: 704px;
-  }
+  } 
 
   .main__menu--title {
     display: none;
